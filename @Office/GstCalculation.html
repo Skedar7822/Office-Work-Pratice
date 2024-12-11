@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<div id="ck">Click Fast..........!</div>
+
+<input type="number" name="" id="num" value="0">Price<br>
+<input type="number" name=" gst" id="gst" value="0.00">gst
+<br>
+<button value="add" onmouseup="check();" onmousedown="huree();">Check</button>
+<script type="text/javascript">
+	
+	function check()
+	{
+		
+		var dv=document.getElementById('ck');
+		var num=Number(document.getElementById('num').value);
+		var gst=Number(document.getElementById('gst').value);
+		var hold=(num*gst)/100;
+		var res=hold+num;
+		dv.innerHTML=res;
+
+			}
+
+			function huree()
+			{
+				var dv=document.getElementById('ck');
+				dv.innerHTML="Check Fast" ;
+			}
+</script>
+</body>
+</html>
